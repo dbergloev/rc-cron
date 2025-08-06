@@ -1,0 +1,7 @@
+[Unit]
+  Description=Cronjob running @%i timer
+
+[Service]
+  Type=oneshot
+  ExecStart=/etc/rc.cron %i
+  

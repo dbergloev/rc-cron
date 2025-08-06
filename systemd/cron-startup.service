@@ -1,0 +1,13 @@
+[Unit]
+  Description=Cronjob running @startup timer
+
+[Service]
+  Type=forking
+  ExecStart=/etc/rc.cron startup
+  TimeoutSec=0
+  StandardOutput=tty
+  RemainAfterExit=yes
+
+[Install]
+  WantedBy=multi-user.target
+  

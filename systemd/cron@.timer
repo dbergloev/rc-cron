@@ -1,0 +1,11 @@
+[Unit]
+  Description=Schedule a cronjob %i
+
+[Timer]
+  Persistent=true
+  OnCalendar=%i
+  Unit=cron@%i.service
+
+[Install]
+  WantedBy=timers.target
+  

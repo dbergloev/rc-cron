@@ -1,0 +1,7 @@
+[Unit]
+  Description=Cronjob running @%i detached process
+
+[Service]
+  Type=simple
+  ExecStart=/etc/rc.cron %i
+  
