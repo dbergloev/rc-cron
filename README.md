@@ -1,3 +1,7 @@
+## Deprecated
+
+This project has been replaced by CarbideStack/eventd
+
 # RC-Cron
 
 Both `crontab` and `rc.local` has been more or less removed or disabled on many distro's. Systemd is replacing most of the old features, and that is fine. It's a hell of a lot better than older init systems, crontab etc., but it's also more complex if you just want to quickly add a script during boot or to run each hour or each day. These are basic things that should be much quicker to add, which is a feature that this provides and more. 
